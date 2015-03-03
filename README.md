@@ -1,15 +1,14 @@
 # Daily Rakes
 
-This is just some Rake tasks I want shared between multiple project on the go.
+This is just some Rake tasks I want shared between multiple projects on the go.
 
 # Branch
 
 This branch creator will use this pattern for branch naming:
 ```ruby
-/s(\d+)-(.*)/
+/s(\d+)-(.*)/ # s10-my-branch
 ```
-Where the `s` stands for Week (in pt_br) and `(\d+)` is generated from the actual year's week number. Ex:
-`s10-my-branch`
+Where the `s` stands for Week (in pt_br) and `(\d+)` is generated from the actual year's week number.
 
 **You're encouraged to change the `s` to `w`, so it represents Week correctly.**
 
